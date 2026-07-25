@@ -1,14 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Editor from "@/components/Editor";
+import DualPixel from "@/components/Editor";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PixelLab — Editor de Fotos Online Grátis" },
-      { name: "description", content: "Edite fotos no navegador: ajustes, filtros, texto, desenho, recorte e camadas. 100% grátis, sem login." },
-      { property: "og:title", content: "PixelLab — Editor de Fotos Online" },
-      { property: "og:description", content: "Editor de fotos completo no navegador. Grátis, rápido, sem instalação." },
+      { title: "DualPixel — Editor de Fotos Profissional Online" },
+      { name: "description", content: "DualPixel: editor de fotos profissional no navegador com camadas, filtros, ajustes, texto e formas. Grátis, sem instalação." },
+      { property: "og:title", content: "DualPixel — Editor de Fotos Profissional" },
+      { property: "og:description", content: "Editor completo com camadas, filtros, ajustes, texto, formas e histórico. 100% no navegador." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Editor,
+  component: DualPixel,
 });
